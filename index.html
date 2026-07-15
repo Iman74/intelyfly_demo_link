@@ -176,6 +176,12 @@
     flex-direction: column;
     gap: 6px;
   }
+  #intellifly-root .photo-item { display: flex; flex-direction: column; gap: 8px; }
+  #intellifly-root .photo-caption {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
   @media (max-width: 640px) {
     #intellifly-root .photo-grid { grid-template-columns: 1fr; }
   }
@@ -391,11 +397,17 @@
       <h2>The drone</h2>
     </div>
     <div class="photo-grid">
-      <div class="reticle photo-slot">
-        <img src="drone-main.jpg" alt="IntelliFly drone" style="width:100%;height:100%;object-fit:cover;">
+      <div class="photo-item">
+        <div class="reticle photo-slot">
+          <img src="drone-main.jpg" alt="IntelliFly drone" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <span class="photo-caption">The IntelliFly drone</span>
       </div>
-      <div class="reticle photo-slot">
-        <img src="drone-frame-gui-screenshot.png" alt="Drone frame in flight-control GUI" style="width:100%;height:100%;object-fit:cover;">
+      <div class="photo-item">
+        <div class="reticle photo-slot">
+          <img src="drone-frame-gui-screenshot.png" alt="Drone frame in flight-control GUI" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <span class="photo-caption">Drone frame in the flight-control GUI</span>
       </div>
       <div class="reticle photo-slot">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
