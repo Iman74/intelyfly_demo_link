@@ -201,6 +201,13 @@
     flex-direction: column;
     gap: 6px;
   }
+  #intellifly-root .founder-photo {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 6px;
+  }
   #intellifly-root .founder-name {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 18px;
@@ -385,11 +392,10 @@
     <div class="section-head">
       <h2>See it fly</h2>
     </div>
-    <div class="reticle">
-      <div class="video-frame">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        <span class="placeholder">[[ DEMO VIDEO — replace this block with an &lt;iframe&gt; embed or link ]]</span>
-      </div>
+    <div class="reticle" style="padding:0; overflow:hidden;">
+      <video class="video-frame" style="aspect-ratio:16/9; width:100%; height:auto; color:inherit;" controls preload="metadata">
+        <source src="drone-demo-video.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 
@@ -439,6 +445,7 @@
     </div>
     <div class="founders">
       <div class="reticle founder-card">
+        <img class="founder-photo" src="moujan-karimi-photo.jpg" alt="Moujan Karimi">
         <span class="founder-role mono">CEO</span>
         <span class="founder-name">Moujan Karimi</span>
         <a class="founder-link" href="#" data-role="moujan-linkedin" target="_blank" rel="noopener">
@@ -446,6 +453,7 @@
         </a>
       </div>
       <div class="reticle founder-card">
+        <img class="founder-photo" src="iman-ostovar-photo.jpg" alt="Iman Ostovar">
         <span class="founder-role mono">CTO</span>
         <span class="founder-name">Iman Ostovar</span>
         <a class="founder-link" href="#" data-role="iman-linkedin" target="_blank" rel="noopener">
